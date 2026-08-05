@@ -4,4 +4,5 @@
  */
 export const paths = {
   home: '/',
+  styleGuide: '/design-system',
 } as const
