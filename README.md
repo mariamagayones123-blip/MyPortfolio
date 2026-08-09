@@ -2,10 +2,11 @@
 
 Production-grade developer portfolio built with React 19, TypeScript, Vite, and Tailwind CSS v4.
 
-> **Status:** Phase 2 — design system & UI foundation complete. No portfolio content sections
-> (Hero, About, Projects, Contact, ...) are implemented yet — this phase only establishes the
-> reusable design tokens, typography, theming, component library, layout primitives, and motion
-> foundation the content phases will build on.
+> **Status:** Phase 2 — Design System & Theme Architecture — complete. No portfolio content
+> sections (Hero, About, Projects, Contact, ...) are implemented yet. **Next: Phase 3 — Supabase
+> Backend & Database.** See [docs/01_Project/Project_Roadmap.md](docs/01_Project/Project_Roadmap.md)
+> for the full, authoritative 16-phase implementation order — it is final and must not be
+> reordered or reinterpreted.
 
 ## Stack
 
@@ -34,16 +35,16 @@ Visit `/design-system` for a live reference of every token and component built i
 
 ## Scripts
 
-| Script                  | Purpose                                         |
-| ------------------------ | ------------------------------------------------ |
-| `npm run dev`            | Start the Vite dev server                        |
-| `npm run build`          | Type-check (`tsc -b`) and build for production   |
-| `npm run preview`        | Preview the production build locally             |
-| `npm run lint`           | Lint with ESLint                                 |
-| `npm run lint:fix`       | Lint and auto-fix                                |
-| `npm run format`         | Format the codebase with Prettier                |
-| `npm run format:check`   | Check formatting without writing                 |
-| `npm run typecheck`      | Type-check only, no emit                         |
+| Script                 | Purpose                                        |
+| ---------------------- | ---------------------------------------------- |
+| `npm run dev`          | Start the Vite dev server                      |
+| `npm run build`        | Type-check (`tsc -b`) and build for production |
+| `npm run preview`      | Preview the production build locally           |
+| `npm run lint`         | Lint with ESLint                               |
+| `npm run lint:fix`     | Lint and auto-fix                              |
+| `npm run format`       | Format the codebase with Prettier              |
+| `npm run format:check` | Check formatting without writing               |
+| `npm run typecheck`    | Type-check only, no emit                       |
 
 ## Project structure
 
@@ -149,3 +150,17 @@ This sandbox's outbound network is limited to package registries (npm, PyPI, cra
 `ui.shadcn.com` and font CDNs aren't reachable. Fonts are self-hosted via `@fontsource` packages
 instead of a Google Fonts `<link>`, and shadcn components were hand-authored rather than pulled
 via its CLI, both of which work identically in a normal environment.
+
+## Documentation
+
+Project documentation lives under `docs/`, organized by concern:
+
+- [`docs/01_Project/Project_Roadmap.md`](docs/01_Project/Project_Roadmap.md) — the final,
+  authoritative 16-phase implementation order. Never reordered.
+- [`docs/03_Development/AI_Development_Specification.md`](docs/03_Development/AI_Development_Specification.md)
+  — engineering standards, tech stack, and workflow rules.
+- [`docs/12_AI/AI_Project_Instructions.md`](docs/12_AI/AI_Project_Instructions.md) — rules
+  governing AI-assisted work on this project, including Roadmap Compliance.
+
+If any other document (this README included) ever appears to conflict with the roadmap, the
+roadmap wins.

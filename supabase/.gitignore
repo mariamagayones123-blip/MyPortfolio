@@ -1,0 +1,5 @@
+# Local Supabase CLI state — created by `supabase start` / `supabase link`,
+# never committed. Migrations, config.toml, and functions/ are still tracked.
+.branches
+.temp
+.env

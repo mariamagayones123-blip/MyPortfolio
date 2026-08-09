@@ -11,7 +11,8 @@ export interface UseMagneticHoverOptions {
  * Attaches a GSAP-driven "magnetic" pull-toward-cursor effect, commonly
  * used on primary CTA buttons. Returns a ref to attach to the target
  * element. No-ops under `prefers-reduced-motion`. Not applied anywhere
- * yet — available for the Hero/CTA build-out in a later phase.
+ * yet — available for the Hero/CTA build-out in Phase 5 (Landing Page:
+ * Hero & Intro), per docs/01_Project/Project_Roadmap.md.
  *
  * @example
  * const magneticRef = useMagneticHover()
